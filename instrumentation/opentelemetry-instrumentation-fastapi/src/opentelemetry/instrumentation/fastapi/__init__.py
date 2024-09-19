@@ -228,7 +228,7 @@ class FastAPIInstrumentor(BaseInstrumentor):
         client_response_hook: ClientResponseHook = None,
         tracer_provider=None,
         meter_provider=None,
-        excluded_urls=None,
+        excluded_urls: str | None = None,
         http_capture_headers_server_request: list[str] | None = None,
         http_capture_headers_server_response: list[str] | None = None,
         http_capture_headers_sanitize_fields: list[str] | None = None,
